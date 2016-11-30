@@ -2,9 +2,6 @@ using System;
 
 namespace Todo.Models
 {
-    // Add profile data for application users by adding properties to the ApplicationUser class
-    public class TodoItem
-    {
-        public String Title { get; set; }
-    }
+    //TODO: créer une classe publique TodoItem avec une unique propriété publique Title de type String
+    //Sous Visual Studio, utiliser le raccourci "prop+TAB" pour créer la propriété
 }

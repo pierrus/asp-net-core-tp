@@ -6,5 +6,7 @@ namespace Todo.Models
     public class TodoItem
     {
         public String Title { get; set; }
+
+        public DateTime CreatedOn { get; set; }
     }
 }

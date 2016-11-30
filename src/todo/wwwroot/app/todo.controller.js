@@ -10,7 +10,7 @@
     function TodoController(TodoService) {
         /* jshint validthis:true */
         var vm = this;
-        vm.title = 'My Simple Todo';
+        vm.title = '.NET Core simple TodoList';
         vm.todo = {};
         vm.todos = [];
 

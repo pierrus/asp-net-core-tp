@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -30,6 +31,8 @@ namespace Todo.Controllers
         [AllowAnonymous]
         public IList<Models.TodoItem> Post([FromBodyAttribute]Models.TodoItem newItem)
         {
+            newItem.CreatedOn = DateTime.Now;
+
             _todoRepository.Add(newItem);
 
             return _todoRepository.Get();

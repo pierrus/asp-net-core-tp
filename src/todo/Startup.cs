@@ -15,6 +15,8 @@ namespace Todo
             // Add framework services.
             services.AddSingleton<Data.ITodoRepository, Data.TodoRepository>();
 
+            services.AddScoped<Data.TodoContext, Data.TodoContext>();
+
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver());
         }
 

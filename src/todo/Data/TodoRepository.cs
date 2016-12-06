@@ -1,20 +1,27 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Todo.Data
 {
     public class TodoRepository : ITodoRepository
     {
-        private IList<Models.TodoItem> _todoItems = new List<Models.TodoItem>();
+        TodoContext _todoContext;
+
+        public TodoRepository (TodoContext todoContext)
+        {
+            _todoContext = todoContext;
+        }
 
         public void Add (Models.TodoItem newItem)
         {
-            _todoItems.Add(newItem);
+            _todoContext.TodoItems.Add(newItem);
+            _todoContext.SaveChanges();
         }
 
         public IList<Models.TodoItem> Get()
         {
-            return _todoItems;
+            return _todoContext.TodoItems.ToList();
         }
     }
 }

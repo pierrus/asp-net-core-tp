@@ -25,5 +25,5 @@ Les fichiers existent et sont à compléter:
 # Contactez-nous
 
 http://www.c17e.com/index.php/blog/
-https://twitter.com/PMurasso
 
+https://twitter.com/PMurasso

@@ -21,3 +21,9 @@ Les fichiers existent et sont à compléter:
 # Point d'attention
 * Startup.cs : regarder comment le service TodoRepository est déclaré pour l'injection de dépendance
 * Regarder évidemment son cycle de vie (options: Transient, Singleton, Scoped). Quelle différence entre ces cycles de vie ?
+
+# Contactez-nous
+
+http://www.c17e.com/index.php/blog/
+https://twitter.com/PMurasso
+

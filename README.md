@@ -3,7 +3,6 @@
 Un TP simple pour découvrir les APIs REST avec .NET Core
 
 ## Etapes principales
-
 Les fichiers existent et sont à compléter:
 
 * Créer la classe Models.TODO
@@ -20,6 +19,5 @@ Les fichiers existent et sont à compléter:
     * Microsoft.EntityFrameworkCore.Design
 
 # Point d'attention
-
 * Startup.cs : regarder comment le service TodoRepository est déclaré pour l'injection de dépendance
 * Regarder évidemment son cycle de vie (options: Transient, Singleton, Scoped). Quelle différence entre ces cycles de vie ?

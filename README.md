@@ -3,9 +3,12 @@
 Un TP simple pour découvrir les APIs REST avec .NET Core
 
 ## Etapes principales
+
+Les fichiers existent et sont à compléter:
+
 * Créer la classe Models.TODO
-* Créer l'interface ITodoRepository
-* Créer la classe TodoRepository qui implémente ITodoRepository
+* Créer l'interface Data.ITodoRepository
+* Créer la classe Data.TodoRepository qui implémente Data.ITodoRepository
 * Compléter le contrôleur MVC API Controllers.TodoController
 
 ## Etapes bonus

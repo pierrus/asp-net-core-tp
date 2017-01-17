@@ -8,7 +8,7 @@ namespace Todo.Test
         [Fact]
         public void EmptyInitialisation() 
         {
-            Todo.Data.TodoRepository rep = new Todo.Data.TodoRepository();
+            Todo.Data.SimpleRepository rep = new Todo.Data.SimpleRepository();
             
             Assert.Equal(0, rep.Get().Count);
         }
@@ -16,7 +16,7 @@ namespace Todo.Test
         [Fact]
         public void AddAnItem() 
         {
-            Todo.Data.TodoRepository rep = new Todo.Data.TodoRepository();
+            Todo.Data.SimpleRepository rep = new Todo.Data.SimpleRepository();
 
             rep.Add(new Todo.Models.TodoItem { Title = "todo-1", CreatedOn = DateTime.Now });
 

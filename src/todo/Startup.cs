@@ -13,7 +13,8 @@ namespace Todo
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddSingleton<Data.ITodoRepository, Data.TodoRepository>();
+            //services.AddSingleton<Data.ITodoRepository, Data.TodoRepository>();
+            services.AddSingleton<Data.ITodoRepository, Data.SimpleRepository>();
 
             services.AddScoped<Data.TodoContext, Data.TodoContext>();
 

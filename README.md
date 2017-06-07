@@ -1,16 +1,17 @@
 # TODO list TP
 
-## Etapes principales
-* Créer la classe Models.TODO
-* Créer l'interface ITodoRepository
-* Créer la classe TodoRepository qui implémente ITodoRepository
-* Compléter le contrôleur MVC API Controllers.TodoController
+## La version finale du TP
 
-## Etapes bonus
-* Ajouter une seconde propriété date de création au modèle Todo, renseigner cette propriété à l'ajout d'un nouvel élément dans le contrôleur, puis l'afficher côté client
-* Créer un projet de test unitaire, tester le repository, exécuter le test avec "dotnet test"
-* Ajouter les packages SqlLite et Entiry Framework
-    * Microsoft.EntityFrameworkCore
-    * Microsoft.EntityFrameworkCore.Sqlite
-    * Microsoft.EntityFrameworkCore.Design
-* Installer MySQL, ajouter les packages MySQL utilise Entity Framework pour déployer le modèle en base, et le requêter
+Intègre: 
+* Pattern repository
+* SQLLite
+* Tests unitaires
+* Docker
+
+## Instructions
+* Exécution simple:  dotnet run dans src/todo
+* Docker: 
+** docker build . -t todo-sqllite
+** docker run --name todo-sqllite -p 5000:80 -d todo-sqllite
+** docker stop todo-sqllite
+** docker start todo-sqllite
